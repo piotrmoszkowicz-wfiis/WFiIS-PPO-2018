@@ -1,0 +1,20 @@
+lab02: main.o Iloczyn.o Iloczyn1.o Iloczyn2.o Kwadrat1.o PolozeniePoczatkowe.o Przyspieszenie.o Suma1.o Suma2.o
+	g++ -o lab02 main.o Iloczyn.o Iloczyn1.o Iloczyn2.o Kwadrat1.o PolozeniePoczatkowe.o Przyspieszenie.o Suma1.o Suma2.o
+main.o: Main.cpp Iloczyn.o Iloczyn1.o Iloczyn2.o Kwadrat1.o PolozeniePoczatkowe.o Przyspieszenie.o Suma1.o Suma2.o
+	g++ -o main.o -c Main.cpp
+Iloczyn.o: Iloczyn.cpp
+	g++ -o Iloczyn.o -c Iloczyn.cpp
+Iloczyn1.o: Iloczyn1.cpp
+	g++ -o Iloczyn1.o -c Iloczyn1.cpp
+Iloczyn2.o: Iloczyn2.cpp
+	g++ -o Iloczyn2.o -c Iloczyn2.cpp
+Kwadrat1.o: Kwadrat1.cpp
+	g++ -o Kwadrat1.o -c Kwadrat1.cpp
+PolozeniePoczatkowe.o: PolozeniePoczatkowe.cpp
+	g++ -o PolozeniePoczatkowe.o -c PolozeniePoczatkowe.cpp
+Przyspieszenie.o: Przyspieszenie.cpp
+	g++ -o Przyspieszenie.o -c Przyspieszenie.cpp
+Suma1.o: Suma1.cpp
+	g++ -o Suma1.o -c Suma1.cpp
+Suma2.o: Suma2.cpp
+	g++ -o Suma2.o -c Suma2.cpp
